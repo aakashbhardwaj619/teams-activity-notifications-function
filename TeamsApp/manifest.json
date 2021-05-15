@@ -1,0 +1,56 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.8",
+    "id": "e23ee3ec-fe52-5d1f-c1de-6fc31ef4a535",
+    "version": "1.0.0",
+    "packageName": "MyTasksApp",
+    "developer": {
+        "name": "mcsab.com",
+        "websiteUrl": "https://MyTasksApp",
+        "privacyUrl": "https://MyTasksApp/privacy.html",
+        "termsOfUseUrl": "https://MyTasksApp/tou.html"
+    },
+    "name": {
+        "short": "My Tasks App",
+        "full": "My Tasks App for Teams"
+    },
+    "description": {
+        "short": "This is My Tasks App for Teams",
+        "full": "This is the My Tasks App packaged for Teams"
+    },
+    "icons": {
+        "outline": "MyTasksAppOutline.png",
+        "color": "MyTasksAppColor.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [
+        {
+            "entityId": "MyTasks",
+            "name": "My Tasks",
+            "contentUrl": "https://mcsab.sharepoint.com",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [],
+    "webApplicationInfo": {
+        "id": "f0f1763a-c8c6-413e-8e50-e33828fa0ccf",
+        "resource": "https://localhost.com"
+    },
+    "activities": {
+        "activityTypes": [
+            {
+                "type": "taskCreated",
+                "description": "Task Created Activity",
+                "templateText": "{actor} created task {taskId} for you"
+            }
+        ]
+    },
+    "validDomains": [
+        "mcsab.sharepoint.com"
+    ]
+}
